@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+          body {
+              font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+              font-size: 16px;
+              line-height: 1.42857143;
+              background: url('https://aadcdn.msftauth.net/ests/2.1/content/images/backgrounds/2_bc3d32a696895f78c19df6c717586a5d.svg') no-repeat center bottom fixed; 
+              background-size: cover;
+          }
+          h2 {
+              text-align: center;
+              width: auto;
+              color: #5b6574;
+              font-size: 40px;
+              font-weight: bold;
+              padding: 1px 1px 1px 1px;
+              margin-top: 1px;
+              margin-bottom: 5px;
+              border-bottom: 3px solid #dee0e4;
+              border-top: 3px solid #dee0e4;
+              }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Music Player</title>
+  <link rel="icon" href="images/favicon.ico">
+      <!-- Load FontAwesome icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      <!-- Load the custom CSS style file -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Load the main script for the player -->
+      <script src="js/env.js"></script>
+      
+ 
+</head>
+<body>
+  <center>
+    <h2>Node Js Music Player</h2>
+</center>  
+
+  <div class="player">
+      <div class="details">
+        <span class="now-playing" id="now-playing" name="now-playing">PLAYING x OF y</span>
+        <div class="track-art"></div>
+        <span class="track-name" id="track-name" name="track-name">Track Name</span>
+        <span class="track-artist" id="track-artist" name="track-artist">Track Artist</span>
+        </div>
+            <div class="buttons">
+            <div class="prev-track" onclick="prevTrack()" id="prev-track"><i class="fa fa-step-backward fa-2x"></i></div>
+            <div class="playpause-track" onclick="playpauseTrack()" id="playpause-track" ><i class="fa fa-play-circle fa-5x"></i></div>
+            <div class="next-track" onclick="nextTrack()" id="next-track"><i class="fa fa-step-forward fa-2x"></i></div>
+            </div>
+  </div>
+</body>
+</html>
